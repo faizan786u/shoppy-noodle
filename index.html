@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title> Shoopy Noodles</title>
+</head>
+<body>
+	<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="logo.png" class="logo" /></a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+           
+        </ul>
+    </header>
+
+    <div class="content">
+        <div class="textBox">
+            <h2>Chatpatta Shan Foods Taste of Authentic Food with a Bite<br />It's <span id="output"> Shoopy Noodles</span></h2>
+            <p>Ingredients Labels:  <br>Wheat Flour (75%), Refined Palm Oil, Sodium Carbonate, Potassium Carbonate & Sodium Phosphate, Xanthan Gum,  <br>Beta-Carotene Colour, Corn Starch, Butylated Hydroxytoluene & Propyl Gallate,....
+            </p>
+            <a href="#" id="learnmore">Order Now</a>
+        </div>
+
+        <div class="imgBox">
+            <img src="1.png"
+                alt="" class="starbucks">
+        </div>
+    </div>
+
+    <ul class="thumbnails">
+        <li>
+            <img id="changeGreen" src="2.png" onclick="imageSlider('1.png');
+                        changeCircleColor('orange')
+                        changeSpanColor('orange')">
+        </li>
+         <li>
+            <img id="changeyellow" src="1.png" onclick="imageSlider('2.png');
+                        changeCircleColor('green')
+                        changeSpanColor('green')">
+        </li>
+        <li>
+            <img id="changePink1" src="3.png" onclick="imageSlider('3.png');
+                        changeCircleColor('red')
+                        changeSpanColor('red')">
+        </li>
+        <!-- <li>
+            <img id="changePink2" src="blue.png" onclick="imageSlider('blue.png');
+                        changeCircleColor('darkblue')
+                        changeSpanColor('darkblue')">
+        </li> -->
+    </ul>
+
+    <ul class="social" id="social">
+    
+    </ul>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
